@@ -1,0 +1,37 @@
+    1  git -v
+    2  clean
+    3  clear
+    4  git config --global user.name "Лайна"
+    5  git config --global user.email "zolotukhinalp@gmail.com"
+    6  git config --global -l
+    7  git clone git@github.com:La1na/education.git
+    8  cd /c/Users/Laina/git_intro
+    9  git init
+   10  git add /c/Users/Laina/git_intro/woman.jpg
+   11  git commit -m "Added photo"
+   12  git branch -M main
+   13  git remote add origin https://github.com/La1na/git_intro.git
+   14  git push -u origin main
+   15  mkdir git-branch
+   16  cd git-branch
+   17  git init
+   18  git remote add origin https://github.com/La1na/git-branch.git
+   19  git checkout -b gitignore
+   20  touch .gitignore
+   21  git add .gitignore
+   22  git commit -m "Add .gitignore file"
+   23  git push -u origin gitignore
+   24  git clone https://github.com/La1na/new_hw
+   25  cd new_hw
+   26  git checkout -b feature
+   27  echo "Feature branch changes" >> README.md
+   28  echo "temp.txt" >> .gitignore
+   29  git add .
+   30  git commit -m "Feature branch updates"
+   31  git push origin feature
+   32  git commit --amend -m "Feature branch updates ammend"
+   33  git push origin feature --force
+   34  git checkout main
+   35  git merge feature
+   36  git push origin main
+   37  history > history.txt
